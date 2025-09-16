@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube de Desbravadores Guardiões do Agreste</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2a0f05;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container {
+      width: 100%;
+      max-width: 703px; /* largura natural da imagem */
+      position: relative;
+    }
+    .image-full {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+    /* Links transparentes posicionados sobre os ícones */
+    .icon-link {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      background: rgba(255,255,255,0); /* transparente */
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+    }
+    /* Remove qualquer destaque padrão de clique */
+    .icon-link:focus, .icon-link:active {
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- imagem principal -->
+    <img src="papel.png" alt="Clube Guardiões do Agreste" class="image-full">
+
+    <!-- Links invisíveis sobre os ícones da imagem -->
+    <a class="icon-link" href="https://www.instagram.com/guardioesdoagreste" target="_blank"
+       aria-label="Instagram @guardioesdoagreste" title="Instagram @guardioesdoagreste"
+       style="left:45.23470839260313%; top:88.37890625%; width:6.258890469416785%; height:6.258890469416785%; transform:translate(-50%,-50%);"></a>
+
+    <a class="icon-link" href="https://wa.me/558197127241" target="_blank"
+       aria-label="WhatsApp +55 81 9712-7241" title="WhatsApp +55 81 9712-7241"
+       style="left:54.90753911806543%; top:88.134765625%; width:5.689900426742532%; height:5.689900426742532%; transform:translate(-50%,-50%);"></a>
+  </div>
+</body>
+</html>
